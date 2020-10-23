@@ -130,110 +130,141 @@ footer {
 
 @media screen and (max-width: 480px) {
   /* 480px以下に適用されるCSS（スマホ用） */
-  body {
+
+  body{
     background-color: black;
     color: white;
   }
-  header h1 {
-    font-size: 40px;
-    margin: 0px;
+  header{
+    h1{
+      font-size: 30px;
+      margin: 0px ;
+    }
+    hr{
+      margin-bottom: 0%;
+    }
   }
-  header hr {
-    margin-bottom: 0%;
-  }
-  .profile {
+  
+  .profile{
     position: relative;
     margin-bottom: 0px;
+  
+    .profile-top{
+      p{position: absolute;
+        color: white;
+        font-size: 25px;
+        top: 10%;
+        left: 50%;
+      }
+      h1{
+        position: absolute;
+        color: white;
+        font-size: 35px;
+        top: 13%;
+        left: 50%;
+      }
+      img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+     }
+    }
+    
+    .profile-bottom{
+      img{
+        margin-top: 60px;
+        margin-bottom: 30px;
+        margin-left: 0%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 100px;
+      }
+      ul{
+        float: right;
+        margin-right: 50%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        list-style: none;
+        font-size: 30px;
+        
+        
+        span{
+          background-color: rgb(111, 112, 27);
+        }
+        
+      }
+    
+      
+    }
+    
+    
+  
   }
-  .profile .profile-top p {
-    position: absolute;
-    color: white;
-    font-size: 40px;
-    top: 25%;
-    left: 50%;
-  }
-  .profile .profile-top h1 {
-    position: absolute;
-    color: white;
-    font-size: 70px;
-    top: 30%;
-    left: 50%;
-  }
-  .profile .profile-top img {
-    width: 100%;
-    height: 900px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .profile .profile-bottom img {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 10%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 50px;
-  }
-  .profile .profile-bottom ul {
-    float: right;
-    margin-right: 30%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    list-style: none;
-    font-size: 30px;
-  }
-  .profile .profile-bottom ul span {
-    background-color: #6f701b;
-  }
-  .myfavorite {
+  .myfavorite{
     margin-top: 50px;
+    h1{
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
   }
-  .myfavorite h1 {
+  
+  .soccer{
+    h2{
+      text-align: center;
+      text-decoration: underline;
+      margin-left: 0px;
+    }
+    
+  }
+  .box{
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 50px;
+  
   }
-  .soccer h2 {
-    margin-left: 63%;
-    text-decoration: underline;
-  }
-  .box {
-    text-align: center;
-  }
-  .box-img {
+  .box-img{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 30px;
+    margin-right: 0px;
+    
+    img{
+      border-radius: 100px;
+      width: 100%;
+      object-fit: cover;
+    }
   }
-  .box-img img {
-    border-radius: 50px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .box-text {
+  
+  .box-text{
     display: inline-block;
     vertical-align: middle;
+  
+    p{
+      font-size: 15px;
+    }
   }
-  .box-text p {
-    font-size: 20px;
-  }
-  .trip {
+  
+  .trip{
     margin-top: 50px;
     text-decoration: underline;
+    h2{
+      margin-left: 0px; 
+      text-align: center;
+    }
   }
-  .trip h2 {
-    margin-left: 63%;
-  }
-  .idol {
+  
+  .idol{
     margin-top: 50px;
     text-decoration: underline;
+    h2{
+      margin-left: 0px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
   }
-  .idol h2 {
-    margin-left: 63%;
-    margin-bottom: 5px;
-  }
-  footer {
+  
+  footer{
     text-align: center;
-    margin: 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 }
 /*# sourceMappingURL=styleys.css.map */
