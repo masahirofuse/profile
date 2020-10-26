@@ -140,8 +140,6 @@
 
 
 
-
-
 @media screen and (max-width: 480px) {
   /* 480px以下に適用されるCSS（スマホ用） */
 
@@ -179,8 +177,8 @@
       }
       img{
         width: 100%;
-        height: 500px;
-        object-fit: cover;
+        height: 400px;
+        object-fit: contain;
      }
     }
     
@@ -241,9 +239,8 @@
     margin-right: 0px;
     
     img{
-      border-radius: 100px;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   
