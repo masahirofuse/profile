@@ -1,131 +1,141 @@
 /* PC用のCSS */
-body{
-  background-color: black;
-  color: white;
-}
-header{
-  h1{
-    font-size: 40px;
-    margin: 0px ;
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+  
+  body{
+    background-color: #333;
+    color: #eee;
   }
-  hr{
-    margin-bottom: 0%;
-  }
-}
-
-.profile{
-  position: relative;
-  margin-bottom: 0px;
-
-  .profile-top{
-    p{position: absolute;
-      color: white;
-      font-size: 40px;
-      top: 25%;
-      left: 50%;
-    }
+  header{
     h1{
-      position: absolute;
-      color: white;
-      font-size: 70px;
-      top: 30%;
-      left: 50%;
+      font-size: 40px;
+      margin: 0px ;
     }
-    img{
-      width: 100%;
-      height: 900px;
-      object-fit: cover;
-   }
+    hr{
+      margin-bottom: 30px;
+    }
   }
   
-  .profile-bottom{
-    img{
-      margin-top: 60px;
-      margin-bottom: 60px;
-      margin-left: 10%;
-      object-fit: cover;
-      border-radius: 50px;
-    }
-    ul{
-      float: right;
-      margin-right: 30%;
-      margin-top: 60px;
-      margin-bottom: 60px;
-      list-style: none;
-      font-size: 30px;
-      
-      
-      span{
-        background-color: rgb(111, 112, 27);
-      }
-      
-    }
+  .profile{
+    position: relative;
+    margin-bottom: 0px;
   
+    .profile-top{
+      p{position: absolute;
+        color: white;
+        font-size: 40px;
+        top: 25%;
+        left: 50%;
+      }
+      h1{
+        position: absolute;
+        color: white;
+        font-size: 70px;
+        top: 30%;
+        left: 50%;
+      }
+      img{
+        width: 100%;
+        height: 900px;
+        object-fit: cover;
+     }
+    }
+    
+    .profile-bottom{
+      img{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 10%;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      dl{
+        float: right;
+        margin-right: 30%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        list-style: none;
+        font-size: 30px;
+        
+        
+        dt{
+          background-color: rgb(47, 144, 151);
+          font-size: 25px;
+        }
+        
+      }
+    
+      
+    }
+    
+    
+  
+  }
+  .myfavorite{
+    margin-top: 50px;
+    h1{
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  .soccer{
+    h2{
+      text-decoration: underline;
+      margin-bottom: 50px;
+    }
     
   }
-  
-  
-
-}
-.myfavorite{
-  margin-top: 50px;
-  h1{
+  .box{
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 50px;
+  
   }
-}
-
-.soccer{
-  h2{
-    margin-left: 63%;
-    text-decoration: underline;
+  .box-img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    img{
+      border-radius: 50px;
+      object-fit: cover;
+    }
   }
   
-}
-.box{
-  text-align: center;
+  .box-text{
+    display: inline-block;
+    vertical-align: middle;
+  
+    p{
+      font-size: 20px;
+      text-align: left;
+    }
 
-}
-.box-img{
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 30px;
-  img{
-    border-radius: 50px;
-    object-fit: cover;
+    br{
+      display: block;
+    }
   }
-}
-
-.box-text{
-  display: inline-block;
-  vertical-align: middle;
-
-  p{
-    font-size: 20px;
+  
+  .trip{
+    margin-top: 50px;
+    
+    h2{
+      text-decoration: underline;
+      margin: 50px 0px;
+    }
   }
-}
-
-.trip{
-  margin-top: 50px;
-  text-decoration: underline;
-  h2{
-    margin-left: 63%;
+  
+  .idol{
+    margin-top: 50px;
+    
+    h2{
+      margin: 50px 0px;
+      text-decoration: underline;
+    }
   }
-}
-
-.idol{
-  margin-top: 50px;
-  text-decoration: underline;
-  h2{
-    margin-left: 63%;
-    margin-bottom: 5px;
+  
+  footer{
+    text-align: center;
+    margin: 50px 0px;
   }
-}
-
-footer{
-  text-align: center;
-  margin: 50px 0px;
 }
 
 
@@ -136,8 +146,8 @@ footer{
   /* 480px以下に適用されるCSS（スマホ用） */
 
   body{
-    background-color: black;
-    color: white;
+    background-color: #333;
+    color: #eee;
   }
   header{
     h1{
@@ -145,7 +155,7 @@ footer{
       margin: 0px ;
     }
     hr{
-      margin-bottom: 0%;
+      margin-bottom: 30px;
     }
   }
   
@@ -183,17 +193,17 @@ footer{
         object-fit: cover;
         border-radius: 100px;
       }
-      ul{
-        float: right;
-        margin-right: 50%;
+      dl{
+        text-align: left;
         margin-top: 30px;
         margin-bottom: 60px;
         list-style: none;
         font-size: 30px;
         
         
-        span{
-          background-color: rgb(111, 112, 27);
+        dt{
+          background-color: rgb(47, 144, 151);
+          font-size: 25px;
         }
         
       }
@@ -243,25 +253,31 @@ footer{
   
     p{
       font-size: 15px;
+      text-align: left;
+    }
+    br{
+      display: none;
     }
   }
   
   .trip{
     margin-top: 50px;
-    text-decoration: underline;
+    
     h2{
       margin-left: 0px; 
       text-align: center;
+      text-decoration: underline;
     }
   }
   
   .idol{
     margin-top: 50px;
-    text-decoration: underline;
+    
     h2{
       margin-left: 0px;
       margin-bottom: 5px;
       text-align: center;
+      text-decoration: underline;
     }
   }
   
