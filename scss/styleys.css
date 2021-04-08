@@ -20,8 +20,8 @@
     margin: 0px;
   }
   header button {
-    padding: 20px;
-    margin-left: 1500px;
+    padding: 10px;
+    border-radius: 100px;
   }
   hr {
     margin-bottom: 30px;
