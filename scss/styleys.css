@@ -18,10 +18,20 @@
   header h1 {
     font-size: 40px;
     margin: 0px;
+    padding-top: 15px;
   }
-  header button {
-    padding: 10px;
-    border-radius: 100px;
+  header .header-left {
+    padding-left: 65%;
+  }
+  header .header-left ul {
+    list-style: none;
+  }
+  header .header-left ul li {
+    display: inline-block;
+    padding-left: 30px;
+  }
+  header .header-left button {
+    border-radius: 30px;
   }
   hr {
     margin-bottom: 30px;
@@ -125,6 +135,62 @@
   footer {
     text-align: center;
     margin: 50px 0px;
+  }
+  .mywork {
+    margin-top: 50px;
+  }
+  .mywork h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .clp {
+    padding-bottom: 40px;
+  }
+  .clp h2 {
+    text-decoration: underline;
+    margin-bottom: 50px;
+  }
+  .clp .box {
+    text-align: center;
+  }
+  .clp .box-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+  }
+  .clp .box-img img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .clp .box-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .clp .box-text p {
+    font-size: 20px;
+    text-align: left;
+  }
+  .clp .box-text br {
+    display: block;
+  }
+  .mystudy {
+    margin-top: 50px;
+  }
+  .mystudy h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .mystudy .study {
+    margin-top: 50px;
+  }
+  .mystudy .study h2 {
+    margin: 50px 0px;
+    text-decoration: underline;
   }
 }
 
