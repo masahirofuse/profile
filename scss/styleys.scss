@@ -20,7 +20,7 @@
     }
 
     .header-left{
-      padding-left: 65%;
+      padding-left: 63%;
       ul{
         list-style: none;
         li{
@@ -32,7 +32,6 @@
       
       button{
         border-radius: 30px;
-        
       }
     }
      
@@ -253,14 +252,31 @@
   header{
     display: flex;
     h1{
-      font-size: 40px;
-      margin: 0px ; 
+      font-size: 30px;
+      margin: 0px ;
+      padding-top: 15px; 
     }
 
-    button{
-      padding: 20px;
-      margin-left: 1500px;
+    .header-left{
+      padding-left: 18%;
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          padding-left: 30px;
+        }
+      }
+
+      
+      button{
+        border-radius: 30px;
+        h2{
+         font-size: small; 
+        }
+        
+      }
     }
+     
   }
   hr{
     margin-bottom: 30px;
@@ -271,46 +287,49 @@
     margin-bottom: 0px;
   
     .profile-top{
-      p{position: absolute;
+      p{
+        position: absolute;
         color: white;
-        font-size: 40px;
-        top: 25%;
-        left: 50%;
+        font-size: 20px;
+        top: 10%;
+        left: 45%;
       }
       h1{
         position: absolute;
         color: white;
-        font-size: 70px;
-        top: 30%;
-        left: 50%;
+        font-size: 30px;
+        top: 12%;
+        left: 45%;
       }
       img{
         width: 100%;
-        height: 900px;
+        height: 400px;
         object-fit: cover;
-     }
+      }
+      
     }
     
     .profile-bottom{
       img{
         margin-top: 60px;
+        width: 100%;
         margin-bottom: 60px;
-        margin-left: 10%;
+        
         object-fit: cover;
         border-radius: 50px;
       }
       dl{
         float: right;
-        margin-right: 30%;
+        width: 100%;
         margin-top: 60px;
         margin-bottom: 60px;
         list-style: none;
-        font-size: 30px;
+        font-size: 25px;
         
         
         dt{
           background-color: rgb(47, 144, 151);
-          font-size: 25px;
+          font-size: 20px;
         }
         
       }
@@ -325,7 +344,7 @@
     margin-top: 50px;
     h1{
       text-align: center;
-      font-size: 30px;
+      font-size: 20px;
       margin-bottom: 50px;
     }
   }
@@ -344,10 +363,9 @@
   .box-img{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 30px;
     img{
-      width: 500px; 
-      height:350px;
+      width: 100%; 
+      height:300px;
       border-radius: 50px;
       object-fit: cover;
     }
@@ -358,7 +376,7 @@
     vertical-align: middle;
   
     p{
-      font-size: 20px;
+      font-size: 15px;
       text-align: left;
     }
 
@@ -388,5 +406,69 @@
   footer{
     text-align: center;
     margin: 50px 0px;
+  }
+
+  //my-work
+  .mywork{
+    margin-top: 50px;
+    h1{
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .clp{
+    padding-bottom: 40px;
+    h2{
+      text-decoration: underline;
+      margin-bottom: 50px;
+    }
+    .box{
+      text-align: center;
+    
+    }
+    .box-img{
+      display: inline-block;
+    vertical-align: middle;
+    img{
+      width: 100%; 
+      height:300px;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+    }
+    
+    .box-text{
+      display: inline-block;
+      vertical-align: middle;
+  
+      p{
+        font-size: 15px;
+        text-align: left;
+      }
+
+      br{
+        display: block;
+      }
+    }
+    
+  }
+  .mystudy{
+    margin-top: 50px;
+    h1{
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+
+    .study{
+      margin-top: 50px;
+      
+      h2{
+        margin: 50px 0px;
+        text-decoration: underline;
+      }
+    }
   }
 }
